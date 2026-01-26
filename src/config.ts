@@ -28,6 +28,19 @@ const PRIVILEGED_ROLES = [
 // For use in dev server
 const TEST_ADMIN_ROLES = ['918888136581476402'];
 
+export const THREAD_FAQ_TAGS = DEV_MODE
+	? [
+			// FAQ
+			'1449512459034431498',
+		]
+	: [
+			// #svelte-and-kit-questions FAQ
+			'1449510806730571817',
+
+			// #ecosystem-questions FAQ
+			'1449512243439075379',
+		];
+
 /**
  * List of roles/user IDs allowed to delete tags even if they're not the author.
  */
@@ -89,6 +102,9 @@ export const COMMUNITY_TEXT_CHANNELS = DEV_MODE
 	? [
 			// #this-is-a-text-channel
 			'918887934822858805',
+
+			// # general
+			'1390364703779459184',
 		]
 	: [
 			// #tech-chat
